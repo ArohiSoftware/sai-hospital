@@ -1,68 +1,56 @@
-import React from 'react'
+import React from "react";
+import Logo from "./logo.png";
 
-
-function Footer() {
+const Footer = () => {
   return (
-    <div>
-      {/* Footer Section */}
-      <footer id="contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
-        <div className="footer d-flex flex-wrap">
-          <div className="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15124.16286963964!2d74.68598130582753!3d18.617238269920172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc343dab849c157%3A0xef28b33db8ed6649!2sShrigonda%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1709024883057!5m2!1sen!2sin"
-              width="450" height="350" style={{ border: '1px solid black' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-          <div className="footer-info d-flex justify-content-between my-2 mx-auto flex-wrap">
-            <div className="info">
-              <div className="footer-location d-flex mt-2">
-                <span className="material-symbols-outlined">location_on</span>
-                <div className="location ms-3">
-                  <h4>Sai Multispecility Hospital</h4>
-                  <p>Sai Nivas, Shrigonda, Ahmednagar, India</p>
-                </div>
-              </div>
-              <div className="footer-email d-flex mt-3">
-                <span className="material-symbols-outlined">mail</span>
-                <div className="email ms-3">
-                  <h4>Email</h4>
-                  <a href="#">saihospital@gmail.com</a>
-                </div>
-              </div>
-              <div className="footer-website d-flex mt-3">
-                <span className="material-symbols-outlined">house</span>
-                <div className="website ms-3">
-                  <h4>Website</h4>
-                  <a href="#">www.saihospital.com</a>
-                </div>
-              </div>
-              <div className="footer-number d-flex mt-3">
-                <span className="material-symbols-outlined">call</span>
-                <div className="number ms-3">
-                  <h4>Help-line Numbers</h4>
-                  <p>033 40 500 500 <br /> +91 9831639000 <br /> +91 983153900</p>
-                  <h4>Corporate Booking Number</h4>
-                  <p>+91 8585088550</p>
-                </div>
-              </div>
-            </div>
-            <div className="info ms-5">
-              <div className="sms">
-                <h4 className="dr">Doctors wanting to reach <br /> Sai Hospital <br /> Management</h4>
-                <h4>may please call:</h4>
-                <p>CMS(+91 98310 96524) <br /> GMM(+91 97487 70596)</p>
-                <h4>or send E-mail to:</h4>
-                <p>CEO: ceo.saihospital@gmai.com <br /> CMS: cmssaihospital@.com</p>
-              </div>
-            </div>
-          </div>
+    <footer className="bg-white text-black py-8">
+      <div className="container mx-auto flex flex-wrap">
+        <div className="w-full md:w-1/4 p-4 flex flex-col items-start">
+          <img src={Logo} alt="Sai Hospital Logo" className="mb-4 w-60 h-auto" />
+       
         </div>
-        <div className="design">
-          <p>Design by Arohi Software</p>
+        <div className="w-full md:w-1/4 p-4">
+          <h3 className="font-bold mb-4 text-2xl">Our Main Services</h3>
+          <ul className="text-lg text-gray-700">
+            <li>Sample Preparations</li>
+            <li>Healthcare Labs</li>
+            <li>Advanced Microscopy</li>
+            <li>Chemical Research</li>
+            <li>Pathology Testing</li>
+          </ul>
         </div>
-      </footer>
-    </div>
-  )
-}
+        <div className="w-full md:w-1/4 p-4">
+          <h3 className="font-bold mb-4 text-2xl">Useful Links</h3>
+          <ul className="text-lg">
+            <li>
+              <a href="#" className="text-gray-700 hover:text-green-500">About Us</a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-700 hover:text-green-500">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-700 hover:text-green-500">Meet Our Team</a>
+            </li>
+            <li>
+              <a href="#" className=" text-gray-700 hover:text-green-500">Our Services</a>
+            </li>
+          </ul>
+        </div>
+        <div className="w-full md:w-1/4 p-4">
+          <h3 className="font-bold mb-4 text-2xl">Contact</h3>
+          <p className="text-gray-700">Your contact details here</p>
+          <p className="text-lg text-gray-700">
+            <span className="block">Sai Multispeciality Hospital</span>
+            <span className="block">Sai Nivas, Shrigonda, Ahmednagar, India</span>
+            <span className="block">Email: <a href="mailto:saihospital@gmail.com" className="text-gray-500 hover:text-green-500">saihospital@gmail.com</a></span>
+          </p>
+        </div>
+      </div>
+      <div className="text-center py-4 border-t border-gray-300">
+        <p className="text-xl">© 2024 Sai Hospital. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
