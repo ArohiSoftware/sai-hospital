@@ -1,11 +1,39 @@
-import React from 'react'
+import React from 'react';
+import "./About.css"
 
-function About() {
+import ContactInfo from '../../component/Contactinfo/Contactinfo';
+import Navbar from '../../component/Navbar/Navbar';
+import Footer from '../../component/Footer/Footer';
+import NewLester from '../../component/NewLester/NewLester';
+import ExpertTeam from '../../component/Team/Team';
+import WhyChooseUs from '../../component/WhyChooseUs/WhyChooseUs';
+import QuickContact from '../../component/QuickContact/QuickContact';
+
+
+function Contact() {
   return (
     <div>
-      About
+      <Navbar/>
+    <div className="App pt-20">
+      <header className="relative bg-cover bg-center h-72 text-white flex items-center justify-center text-center font-sans" style={{ backgroundImage: 'url(https://images.pexels.com/photos/245240/pexels-photo-245240.jpeg?cs=srgb&dl=pexels-atbo-66986-245240.jpg&fm=jpg)' }}>
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+      <div className="relative z-20 p-5">
+        <h1 className="mt-5 text-4xl font-bold tracking-wide animate-fadeInDown">About Us</h1>
+        <p className="text-xl font-light animate-fadeInUp">We are here to help you with any questions or concerns</p>
+      </div>
+    </header>
+      <div className="container mx-auto px-4">
+    
+      
+      </div>
     </div>
-  )
+    <WhyChooseUs/>
+    <ExpertTeam/>
+     <QuickContact/>
+    <NewLester/>
+    <Footer/>
+    </div>
+  );
 }
 
-export default About
+export default Contact;
