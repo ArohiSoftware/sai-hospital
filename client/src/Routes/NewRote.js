@@ -7,7 +7,12 @@ import Login from "../views/Login/Login";
 import Signup from "../views/Signup/Signup";
 import Opd from "../views/Opd/Opd";
 import Services from "../views/Services/Services";
+
 import Appointment from "../views/Appointment/Appointment";
+
+import Contact from "../views/Contact/Contact";
+
+
 
 function NewRoutes() {
   return (
@@ -15,6 +20,7 @@ function NewRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/Doct" element={<Doct/>} />
         <Route path="/Doctor" element={<Doctor />} />
         <Route path="/Login" element={<Login />} />
