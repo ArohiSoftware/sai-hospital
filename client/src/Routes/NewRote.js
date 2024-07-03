@@ -8,6 +8,7 @@ import Opd from "../views/Opd/Opd";
 import Services from "../views/Services/Services";
 import About from "../views/About/About"; // Adjusted the path
 import Contact from "../views/Contact/Contact";
+import Appointment from "../views/Appointment/Appointment";
 
 function NewRoutes() {
   return (
@@ -22,6 +23,7 @@ function NewRoutes() {
         <Route path="/signup" element={<Signup />} /> {/* Added missing route */}
         <Route path="/opd" element={<Opd />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/apointment" element={<Appointment />} />
       </Routes>
     </div>
   );
