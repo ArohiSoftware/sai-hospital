@@ -7,7 +7,11 @@ import Login from "../views/Login/Login";
 import Signup from "../views/Signup/Signup";
 import Opd from "../views/Opd/Opd";
 import Services from "../views/Services/Services";
+
+import Appointment from "../views/Appointment/Appointment";
+
 import Contact from "../views/Contact/Contact";
+
 
 
 function NewRoutes() {
@@ -23,6 +27,7 @@ function NewRoutes() {
         <Route path="/Signup" element={<Signup />} />
         <Route path="/opd" element={<Opd />} />
         <Route path="/Services" element={<Services />} />
+        <Route path="appointment" element={<Appointment/>} />
       </Routes>
     </div>
   );
