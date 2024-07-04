@@ -297,6 +297,14 @@ function Appointment() {
                       <br />
                       <strong>Phone Number:</strong> {formData.phoneNumber}
                       <br />
+                      <strong>Illness:</strong> {formData.illness}
+                      <br />
+                      <strong>Address:</strong> {formData.address}
+                      <br />
+                      <strong>Age:</strong> {formData.age}
+                      <br />
+                      <strong>Blood Group:</strong> {formData.bloodGroup}
+                      <br />
                       <strong>Date and Time:</strong>{" "}
                       {formData.dateTime.toString()}
                     </Typography>
