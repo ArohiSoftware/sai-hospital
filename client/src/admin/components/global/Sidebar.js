@@ -1,5 +1,22 @@
 import React, { useState } from 'react';
-import { FaBars, FaHome, FaUser, FaCog, FaSignOutAlt } from 'react-icons/fa';
+import { FaBars, FaCalendarCheck,FaStethoscope, FaUser, FaCog, FaSignOutAlt } from 'react-icons/fa';
+import { MdSpaceDashboard,MdPayments  } from "react-icons/md";
+import { FaUserDoctor } from "react-icons/fa6";
+import { BiHandicap } from "react-icons/bi";
+import { Link } from 'react-router-dom';
+
+
+const SidebarItem = ({ isOpen, path, label, icon }) => {
+  return (
+    <li className="flex items-center p-4 hover:bg-gray-700 cursor-pointer">
+      <Link to={path} className="flex items-center">
+        {icon && <icon.type />}
+        {isOpen && <span className="ml-4">{label}</span>}
+      </Link>
+    </li>
+  );
+};
+
 
 export default function Sidebar({ toggleSidebar,isOpen }){
   
@@ -11,22 +28,17 @@ export default function Sidebar({ toggleSidebar,isOpen }){
         <FaBars className="cursor-pointer" onClick={toggleSidebar} />
       </div>
       <ul className="flex flex-col text-gray-300">
-        <li className="flex items-center p-4 hover:bg-gray-700 cursor-pointer">
-          <FaHome />
-          {isOpen && <span className="ml-4">Home</span>}
-        </li>
-        <li className="flex items-center p-4 hover:bg-gray-700 cursor-pointer">
-          <FaUser />
-          {isOpen && <span className="ml-4">Profile</span>}
-        </li>
-        <li className="flex items-center p-4 hover:bg-gray-700 cursor-pointer">
-          <FaCog />
-          {isOpen && <span className="ml-4">Settings</span>}
-        </li>
-        <li className="flex items-center p-4 hover:bg-gray-700 cursor-pointer">
-          <FaSignOutAlt />
-          {isOpen && <span className="ml-4">Logout</span>}
-        </li>
+        
+        <SidebarItem isOpen={isOpen} path="/admin" label="Dashboard" icon={<FaCalendarCheck />} />
+    
+        <SidebarItem isOpen={isOpen} path="/admin/appointments" label="Appointments" icon={<FaStethoscope />} />
+
+        <SidebarItem isOpen={isOpen} path="/admin/doctors" label="Doctors" icon={<FaUserDoctor />} />
+
+        <SidebarItem isOpen={isOpen} path="/admin/patients" label="Patients" icon={<BiHandicap />} />
+
+        <SidebarItem isOpen={isOpen} path="/admin/payments" label="Payments" icon={<MdPayments />} />
+
       </ul>
     </div>
   );
