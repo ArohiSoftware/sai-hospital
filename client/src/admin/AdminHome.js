@@ -4,7 +4,7 @@ import Dash from "./components/global/Dash";
 import Appointments from './components/global/Appointments';
 
 export default function AdminHome({main, heading}){
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
