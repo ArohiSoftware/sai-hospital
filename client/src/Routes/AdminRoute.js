@@ -7,14 +7,7 @@ import LineChart from '../admin/components/global/Line';
 import Doctors from '../admin/components/global/Doctor';
 
 function AdminRoute() {
-  // return (
-  //   const adminRoutes = [
-  //     { path: '/admin', exact: true, component: AdminDashboard },
-  //     { path: '/admin/settings', component: AdminSettings },
-  //     { path: '/admin/users', component: AdminUsers },
-  //     { path: '/admin/login', component: AdminLogin },
-  //   ];
-  // )
+ 
   return (
     <div>
       

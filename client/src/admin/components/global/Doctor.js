@@ -28,7 +28,6 @@ const doctors = [
   { id: 1, name: 'Dr. John Doe', specialty: 'Cardiology' },
   { id: 2, name: 'Dr. Jane Smith', specialty: 'Pediatrics' },
   { id: 3, name: 'Dr. Robert Brown', specialty: 'Orthopedics' },
-  // Add more doctors as needed
 ];
 
 const Doctors = () => {
