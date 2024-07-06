@@ -1,4 +1,9 @@
 import React from "react";
+import "./App.css";
+import MainService from "opd/MainService";
+import Facilities from "opd/Facilities";
+import Location from "opd/Location";
+import Appointment from "opd/Appointment";
 import NewRoutes from "./Routes/NewRote";
 import AdminRoute from "./Routes/AdminRoute";
 
@@ -7,8 +12,26 @@ import AdminRoute from "./Routes/AdminRoute";
 function App() {
   return (
     <div>
+      <div className="app">
+        <div className="left-section">
+          <img
+            src="./assets/images/opd.jpg"
+            alt="Medical"
+            className="main-image"
+          />
+        </div>
+        <div className="right-section">
+          <div className="top-right">
+            <Facilities />
+            <Location />
+          </div>
+          <MainService />
+          <Appointment />
+        </div>
+      </div>
+
       <NewRoutes />
-      <AdminRoute/>
+      <AdminRoute />
     </div>
   );
 }

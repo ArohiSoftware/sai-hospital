@@ -1,0 +1,13 @@
+.location {
+  background-color: #70c5a9;
+  color: white;
+}
+
+.location h2 {
+  margin-top: 0;
+}
+
+.location a {
+  color: white;
+  text-decoration: none;
+}

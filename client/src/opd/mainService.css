@@ -1,0 +1,13 @@
+.main-service {
+  background-color: #70c5a9;
+  color: white;
+}
+
+.main-service h2 {
+  margin-top: 0;
+}
+
+.main-service a {
+  color: white;
+  text-decoration: none;
+}
