@@ -1,33 +1,52 @@
-import React from 'react';
+import React from "react";
+import Imgages from './opd.jpg'
 
 function MedicalFacility() {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <div
-        className="relative w-4/5 h-[80vh] bg-cover bg-center flex flex-col justify-center items-center"
-        style={{ backgroundImage: 'url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaRRECLSh8YqzuZi-8pljq5R7pvBoMX1RNoefTyoHzISUs6JqC)' }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div> {/* Overlay to darken the background image */}
-        <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="bg-red-500 text-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-2">Card 1</h3>
-            <p className="text-lg">This is some text inside card 1.</p>
-          </div>
-          <div className="bg-blue-500 text-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-2">Card 2</h3>
-            <p className="text-lg">This is some text inside card 2.</p>
-          </div>
-          <div className="bg-green-500 text-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-2">Card 3</h3>
-            <p className="text-lg">This is some text inside card 3.</p>
-          </div>
-          <div className="bg-yellow-500 text-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-2">Card 4</h3>
-            <p className="text-lg">This is some text inside card 4.</p>
-          </div>
+    <div className='w-full h-screen bg-white mt-20'>
+            <div className='w-[85%] mx-auto flex flex-row rounded-lg relative'>
+                <div className='w-[50%] bg-green-600 '>
+                    <img src={Imgages} alt="myImages" className='z-0 h-[100%]' />
+                </div>
+                <div className='absolute z-10 w-[300px] bottom-0 right-[50%] bg-green-500 p-8 text-white'>
+                    <h2 className='text-[1.7rem] font-semibold'>Our main Service</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda ipsam animi neque porro dolorum doloribus odit sequi accusantium maxime.</p>
+                    <div className='mt-14'>
+                        <a href="" className=' text-white'>learn more</a>
+                    </div>
+                </div>
+                <div className='w-[50%] bg-red-400 flex flex-col'>
+                    <div className='flex flex-row'>
+                        <div className='text-black p-6 bg-white'>
+                            <h2 className='text-[1.7rem] font-semibold'>Our Facilities</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda ipsam animi neque porro dolorum doloribus odit sequi accusantium maxime.</p>
+                            <div className='mt-14'>
+                                <a href="" className=' text-black'>learn more</a>
+                            </div>
+                        </div>
+                        <div className='text-white bg-green-500 p-7'>
+                            <h2 className='text-[1.7rem] font-semibold'>Our Location</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda ipsam animi neque porro dolorum doloribus odit sequi accusantium maxime.</p>
+                            <div className='mt-14'>
+                                <a href="" className=' text-white'>Get Direction</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='p-7 bg-blue-700 text-white'>
+                        <h2 className='text-[1.7rem] font-semibold'>Make an appointment</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur nostrum corporis a aliquid voluptates, asperiores commodi mollitia delectus, nobis eum cum excepturi error assumenda dignissimos, dolor quo molestias illum.</p>
+                        <div className='flex flex-row gap-7 mt-6'>
+                            <button className='border-[2px] border-white bg-transparent hover:bg-transparent px-8 py-2'>Start Now</button>
+                            <div className='w-[1px] bg-white'></div>
+                            <div className='pl-6'>
+                                <p>Book an appointment</p>
+                                <p className='text-[1.4rem]'>+09876543</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
   );
 }
 
